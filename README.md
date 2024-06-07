@@ -1,57 +1,37 @@
-# 🚀 Getting started with Strapi
+# TodoList-Strapi
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+## Description
 
-### `develop`
+- it is a backend application which provide web service using strapi, it has a CRUD operations for todos and specify relations between todos and users
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+## Table of Contents
 
-```
-npm run develop
-# or
-yarn develop
-```
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [License](#license)
 
-### `start`
+## Installation
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+1. Clone the repository: git clone https://github.com/HodaRoushdy/todoList-strapi-backend.git
+2. Install dependencies: npm install
 
-```
-npm run start
-# or
-yarn start
-```
+## Usage
 
-### `build`
+1. Start the server: npm run develop
+2. Open your browser and visit http://localhost:1337
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+## API Documentation
 
-```
-npm run build
-# or
-yarn build
-```
+- GET API on http://localhost:1337/api/todos => retrieve all todos related to specific user using token
+- GET API on http://localhost:1337/api/todos/id=> retrieve only specific todo related to specific user
+- GET API on http://localhost:1337/api/users/me?populate=todos => retrieve all user data includes todos
+- GET API on http://localhost:1337/api/users/id=> retrieve specific user
+- POST API on http://localhost:1337/api/todos => enable user to add new todo
+- POST API on http://localhost:1337/api/auth/local => enable user to login
+- POST API on http://localhost:1337/api/auth/local/register => enable user register
+- PUT API on http://localhost:1337/api/todos/id => enable user to update specific todo
+- DELETE API on http://localhost:1337/api/todos/id => enable user to delete specific todo
 
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+## License
+- Huda Roushdy
